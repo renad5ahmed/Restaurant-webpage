@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Restaurant page</title>
+ <link rel="stylesheet" href="Style.css"> <!-- Include the CSS file-->
+
+<style>
+
+div{
+  align-items: center;
+  text-align: center;
+  padding-top:15;
+  padding-left:5;
+}
+
+h1{
+ text-align: center;
+ padding-top: 150;
+}
+
+</style>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =this.responseText;
+    }
+  };
+  xhttp.open("GET", "learn.html", true);
+  xhttp.send();
+}
+</script>
+
+</head>
+
+<body>
+  
+    <p>
+    <input type="button" id="c" value="Blog" />
+    <input type="button" id="c" value="Menu" />
+    <input type="button" id="c" value="Gallery" />
+    <input type="button" id="c" value="Contact us" />
+    <input type="button" id="c" value="About" />
+    <input type="button" id="c" value="Home" />
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div>
+        <h2><b> <font color="GoldenRod"> French Restaurant </font> </b></h2>
+
+
+<h2><i><font color="GoldenRod"> We are the best restaurant in town </font></i>
+</h2>
+    </div>
+
+</p>
+  <div>
+    
+		 <button type="button" onclick="loadDoc()" >Learn More </button>
+         <input type="button" onclick="window.location.href='Booking.html';" value="Book a visit" />
+  </div>
+
+  <div id="demo">
+
+
+</div>
+</body>
+</html>
